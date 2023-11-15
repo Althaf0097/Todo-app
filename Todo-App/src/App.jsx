@@ -1,5 +1,8 @@
 import AppName from "./components/AppName";
+import TodoItem2 from "./components/TodoItem2 copy";
+import TodoItem1 from "./components/Todoitem1";
 import AddTodo from "./components/addTodo";
+import "./App.css";
 
 function App() {
 
@@ -8,35 +11,12 @@ function App() {
     className='todo-container'>
     <AppName />
     <AddTodo />
-    <div className="container text-center">
-      <div className="row">
-        <div className="col-6">
-          Buy Milk
-        </div>
-
-        <div className="col-4">
-          4/10/2023
-        </div>
-        <div className="col-2">
-          <button type="button" className="btn btn-danger">Delete</button>
-        </div>
-
-      </div>
-      <div className="row">
-        <div className="col-6">
-          go to Colllege
-        </div>
-
-        <div className="col-4">
-          4/10/2023
-        </div>
-        <div className="col-2">
-          <button type="button" className="btn btn-success">Add</button>
-        </div>
-      </div>
+    <div className="items-container">
+      <TodoItem1 />
+      <TodoItem2 />
     </div>
   </center>
-  )
+  );
 }
 
 export default App
