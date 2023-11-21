@@ -1,0 +1,9 @@
+.todoHeading {
+  font-family: 700;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(47, 149, 212);
+  border-radius: 50px;
+  padding-right: 100lvh;
+}

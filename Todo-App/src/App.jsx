@@ -7,8 +7,16 @@ function App() {
 
   const todoItems = [
     {
-    name: 'Buy Milk',
-    dueDate:'4/10/2023'
+      name: 'Buy Milk',
+      dueDate:'4/10/2023'
+    },
+    {
+      name: 'Go to college',
+      dueDate:'4/10/2023'
+    },
+    {
+      name: 'This is react app',
+      dueDate:'TodoApp'
     }
   ];
 

@@ -1,10 +1,12 @@
 import TodoItem from "./Todoitem";
+import styles from "./TodoItems.module.css";
 
-const TodoItems = ({ TodoItems })=>{
+const TodoItems = ({ todoItems })=>{
   return (
-    <div className="items-container">
-      <TodoItem todoDate="4/10/2023" todoName="Buy Milk"></TodoItem>
-      <TodoItem todoDate="4/10/2023" todoName="Go to College"></TodoItem>
+    <div className={styles.itemsContainer}>
+      {todoItems.map((item) => (
+        <TodoItem todoDate={item.dueDate} todoName={item.name}></TodoItem>
+      ))}
     </div>
   );
 };
